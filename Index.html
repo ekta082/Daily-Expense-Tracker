@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>💰 Daily Expense Tracker</h1>
+
+    <div class="input-section">
+      <input type="number" id="amount" placeholder="Enter amount (₹)" />
+      <input type="text" id="category" placeholder="Category (e.g. Food, Travel)" />
+      <input type="date" id="date" />
+      <button id="add-btn">Add Expense</button>
+    </div>
+
+    <h2>📜 Expense List</h2>
+    <div class="filter-section">
+      <select id="filter-category">
+        <option value="all">All</option>
+      </select>
+    </div>
+
+    <ul id="expense-list"></ul>
+
+    <div class="total">
+      <h3>Total Spent: ₹<span id="total-amount">0</span></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
